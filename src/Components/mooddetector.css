@@ -1,0 +1,151 @@
+.mood-detector-widget {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #ff9500 0%, #ff6b35 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.mood-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.mood-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mood-toggle {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.mood-toggle:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.mood-toggle.active {
+  background: #4CAF50;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.mood-content {
+  padding: 15px;
+}
+
+.emotion-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.emotion-emoji {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+.emotion-info {
+  flex: 1;
+}
+
+.emotion-info h5 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.confidence-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  transition: width 0.3s ease;
+}
+
+.confidence-text {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.demographics {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.mini-camera-feed {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.2);
+}
+
+.camera-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.camera-feed-container {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mood-detector-widget {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.mood-detector-widget.active {
+  animation: pulse 2s infinite;
+}
