@@ -80,20 +80,20 @@ function Footer() {
             gap: '20px',
             marginBottom: '25px'
           }}>
-            <a href="https://t.me/moodmart" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+            <a href="" target="_blank" rel="noopener noreferrer" className="footer-social-link">
               <i className="fab fa-telegram-plane" style={{ fontSize: '24px', color: '#0088cc' }}></i>
             </a>
-            <a href="https://github.com/abhishekgiri04" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+            <a href="" target="_blank" rel="noopener noreferrer" className="footer-social-link">
               <i className="fab fa-github" style={{ fontSize: '24px', color: '#ffffff' }}></i>
             </a>
-            <a href="https://www.linkedin.com/in/abhishek-giri04/" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+            <a href="" target="_blank" rel="noopener noreferrer" className="footer-social-link">
               <i className="fab fa-linkedin" style={{ fontSize: '24px', color: '#0077b5' }}></i>
             </a>
           </div>
           
           <p style={{ fontSize: '16px', margin: '10px 0', fontWeight: '500' }}>© 2025 MoodMart | Feel. Find. Shop.</p>
           <p style={{ fontSize: '14px', opacity: 0.7, margin: '5px 0' }}>AI-Powered E-Commerce Platform</p>
-          <p style={{ fontSize: '12px', opacity: 0.5, marginTop: '15px' }}>Developed by Abhishek Giri</p>
+          <p style={{ fontSize: '12px', opacity: 0.5, marginTop: '15px' }}>Developed by Kashish Sharma</p>
         </div>
       </div>
     </footer>
