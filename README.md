@@ -172,11 +172,12 @@ MoodMart/
 │   ├── 📄 App.js                   # 🔄 Main React component
 │   ├── 📄 store.js                 # 🏪 Redux store
 │   └── 📄 index.js                 # 🚀 Application entry point
-├── 📄 mood_detection_server.py     # 🐍 Python mood detection server
-├── 📄 start_moodmart.py            # 🚀 Application launcher
+├── 📄 mood_detection_server.py     # 🐍 Python mood detection server (optional)
+├── 📄 start_moodmart.py            # 🚀 Application launcher (optional)
 ├── 📄 package.json                 # 📦 Node.js dependencies
-├── 📄 requirements.txt             # 🐍 Python dependencies
+├── 📄 requirements.txt             # 🐍 Python dependencies (optional)
 ├── 📄 vercel.json                  # ⚡ Vercel deployment config
+├── 📄 .vercelignore                # 🚫 Vercel ignore rules
 ├── 📄 .gitignore                   # 🚫 Git ignore rules
 └── 📄 README.md                    # 📖 Project documentation
 ```
