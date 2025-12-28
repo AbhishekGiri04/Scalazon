@@ -155,10 +155,22 @@ Scalazon is a modern e-commerce platform that provides users with a seamless onl
 <br>
 
 ## 📁 Project Structure
+
+```
+Scalazon/
+├── 📂 docs/                       # 📸 Screenshots and documentation
+│   ├── 📄 SignIn_Page.png               # 🔑 Sign in page screenshot
+│   ├── 📄 SignUp_Page.png               # 📝 Sign up page screenshot
+│   ├── 📄 Home_Page.png                 # 🏠 Home page screenshot
+│   ├── 📄 Dashboard_Page.png            # 📊 Dashboard screenshot
+│   ├── 📄 Cart.png                      # 🛒 Shopping cart screenshot
+│   ├── 📄 Wishlist.png                  # ❤️ Wishlist screenshot
+│   ├── 📄 Payment.png                   # 💳 Payment process screenshot
+│   ├── 📄 Orders.png                    # 📦 Orders page screenshot
+│   ├── 📄 Profile_Page.png              # 👤 Profile page screenshot
+│   └── 📄 Transactions.png              # 💰 Transactions screenshot
 ├── 📂 public/                     # 🌐 Static assets and HTML template
-│   ├── 📄 index.html                   # Main HTML template with SEO
-│   ├── 📄 manifest.json                # PWA configuration
-│   └── 📂 imgs/                        # Static images and logos
+│   └── 📄 index.html                   # Main HTML template with SEO
 ├── 📂 src/                        # 🎨 React application source
 │   ├── 📂 Components/             # 🧩 Reusable UI components
 │   │   ├── 📄 Home.js                   # 🏠 Main landing page
@@ -172,19 +184,36 @@ Scalazon is a modern e-commerce platform that provides users with a seamless onl
 │   │   ├── 📄 Payment.js                # 💳 Checkout process
 │   │   ├── 📄 Signin.js                 # 🔑 User authentication
 │   │   ├── 📄 Signup.js                 # 📝 User registration
+│   │   ├── 📄 Deals.js                  # 🏷️ Special deals component
+│   │   ├── 📄 Error.js                  # ⚠️ Error handling component
+│   │   ├── 📄 LowerNav.js               # 📱 Mobile navigation
+│   │   ├── 📄 Spinner.js                # ⏳ Loading spinner
 │   │   └── 📂 Category/                 # 📂 Product category components
 │   │       ├── 📄 Electronics.js            # 💻 Electronics category
 │   │       ├── 📄 Mens.js                   # 👔 Men's fashion
 │   │       ├── 📄 Womens.js                 # 👗 Women's fashion
 │   │       └── 📄 Jewelry.js                # 💎 Jewelry category
 │   ├── 📂 action/                 # 🔄 Redux actions
-│   │   └── 📄 index.js                  # Action creators
+│   │   ├── 📄 Cart.js                   # 🛒 Cart actions
+│   │   ├── 📄 List.js                   # ❤️ Wishlist actions
+│   │   └── 📄 Orders.js                 # 📦 Order actions
 │   ├── 📂 reducer/                # 📊 Redux reducers
-│   │   └── 📄 index.js                  # State management
-│   ├── 📂 imgs/                   # 🖼️ Component images
+│   │   ├── 📄 CartReducer.js            # 🛒 Cart state management
+│   │   ├── 📄 ListReducer.js            # ❤️ Wishlist state management
+│   │   ├── 📄 OrderReducer.js           # 📦 Order state management
+│   │   └── 📄 reducer.js                # Combined reducers
+│   ├── 📂 imgs/                   # 🖼️ Component images and assets
+│   │   ├── 📄 cart.png                  # 🛒 Cart icons
+│   │   ├── 📄 heart.png                 # ❤️ Wishlist icons
+│   │   ├── 📄 user.png                  # 👤 User avatars
+│   │   ├── 📄 loading.gif               # ⏳ Loading animations
+│   │   └── 📄 ...                       # Other UI assets
+│   ├── 📂 font/                   # 🔤 Custom fonts
+│   │   └── 📄 CREDC___.ttf              # Custom font file
 │   ├── 📄 Firebase.js             # 🔥 Firebase configuration
 │   ├── 📄 App.js                  # 🚀 Main application component
 │   ├── 📄 App.css                 # 🎨 Global styles
+│   ├── 📄 store.js                # 🏪 Redux store configuration
 │   └── 📄 index.js                # 📍 Application entry point
 ├── 📄 package.json                # 📦 Dependencies and scripts
 ├── 📄 .env                        # 🔐 Environment variables
@@ -358,7 +387,7 @@ npm install
 ## 🚀 Deployment
 
 **🌐 Live Application:**
-- **Website:** https://scalazon.vercel.app
+- **Website:** https://scalazon-dev.vercel.app
 - **Repository:** https://github.com/AbhishekGiri04/Scalazon
 
 **Local Development:**
@@ -392,12 +421,14 @@ vercel --prod
 
 ---  
 
-## 👨💻 Developer
+## 📞 Help & Contact  
 
-**Abhishek Giri - Full Stack Developer**
+> 💬 *Got questions or need assistance with Scalazon?*  
+> We're here to help with technical support and collaboration!
 
 <div align="center">
 
+**👤 Abhishek Giri - Full Stack Developer**  
 <a href="https://www.linkedin.com/in/abhishek-giri04/">
   <img src="https://img.shields.io/badge/Connect%20on-LinkedIn-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn - Abhishek Giri"/>
 </a>  
@@ -408,11 +439,18 @@ vercel --prod
   <img src="https://img.shields.io/badge/Chat%20on-Telegram-blue?style=for-the-badge&logo=telegram" alt="Telegram - Abhishek Giri"/>
 </a>
 
-</div>
-
-<br>
+<br/>
 
 ---
+
+**🛒 Built with ❤️ for Modern E-Commerce Experience**  
+*Scalazon: Where Shopping Meets Technology*
+
+</div>
+
+---
+
+<div align="center">
 
 ## 🤝 Contributing
 
@@ -441,13 +479,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Product data from FakeStore API
 - Firebase for backend services
 - React community for amazing tools
-
----
-
-<div align="center">
-
-**🛒 Built with ❤️ for Modern E-Commerce Experience**  
-*Scalazon: Where Shopping Meets Technology*
 
 **© 2025 Scalazon. All Rights Reserved.**
 
