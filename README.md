@@ -446,8 +446,14 @@ vercel --prod
 
 </div>
 
+<div align="center">
+
+</div>
+
 ---
 
 <div align="center">
+
+**© 2025 Scalazon - Modern E-Commerce Platform. All Rights Reserved.**
 
 </div>
