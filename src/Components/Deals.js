@@ -107,7 +107,6 @@ function Deals() {
       <div className="lowerNav">
         <LowerNav />
       </div>
-      <Footer />
     </div>
   );
 }
