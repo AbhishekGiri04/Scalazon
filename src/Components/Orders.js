@@ -12,7 +12,7 @@ import LowerNav from "./LowerNav";
 function Orders() {
   const OrderItems = useSelector((state) => state.OrderAdded.OrderItems);
 
-  document.title = "MoodMart - Your Orders"
+  document.title = "Scalazon - Your Orders"
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -1,5 +1,5 @@
 import { React, useEffect, useState, useRef } from "react";
-// Using custom MoodMart branding
+// Using custom Scalazon branding
 import search from "../imgs/search.png";
 import wishlist from "../imgs/wishlist.png";
 import cart from "../imgs/cart.png";
@@ -156,8 +156,8 @@ function Navbar() {
             }}
           >
             <img 
-              src="https://i.pinimg.com/1200x/fc/9d/ff/fc9dfff31121e22216be786dc7a2ee5f.jpg" 
-              alt="MoodMart Logo" 
+              src="https://t3.ftcdn.net/jpg/04/18/27/84/360_F_418278492_qD4wt38KiSik4tP0d8TyzQTObnDuC6nt.jpg" 
+              alt="Scalazon Logo" 
               style={{
                 width: '40px',
                 height: '40px',
@@ -174,7 +174,7 @@ function Navbar() {
                 fontFamily: 'Poppins, sans-serif'
               }}
             >
-              MoodMart
+              Scalazon
             </div>
           </div>
 
@@ -183,7 +183,7 @@ function Navbar() {
             <input
               type="text"
               className="search-box"
-              placeholder="Feel. Find. Shop..."
+              placeholder="Search products..."
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
               onKeyPress={handleKeyPress}
@@ -315,7 +315,7 @@ function Navbar() {
           <input
             type="text"
             className="search-box"
-            placeholder="Feel. Find. Shop..."
+            placeholder="Search products..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
             onKeyPress={handleKeyPress}

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import MoodBasedRecommendations from "./MoodBasedRecommendations";
+import Popular from "./Category/Popular";
 import "./productpage.css";
 import Rating from "../imgs/rating.png";
 import added from "../imgs/added.png";
@@ -19,13 +19,11 @@ function ProductPage() {
   const [Size, setSize] = useState("");
   const [AddedIds, setAddedIds] = useState([]);
   const [reviews, setReviews] = useState(null);
-  const [currentEmotion, setCurrentEmotion] = useState('neutral');
-  const [moodRecommendations, setMoodRecommendations] = useState([]);
   const Quantity = 1;
 
   const tiltRef = useRef(null);
 
-  document.title = `${product ? product.title : "MoodMart - Feel. Find. Shop."}`
+  document.title = `${product ? product.title : "Scalazon - Your Shopping Destination"}`
 
   const CartItems = useSelector((state) => state.CartItemsAdded.CartItems);
   const dispatch = useDispatch();
@@ -93,27 +91,7 @@ function ProductPage() {
         quantity: Quantity,
       };
       dispatch(AddToCart(item));
-      
-      // Log mood-based interaction
-      fetch('http://localhost:8080/log_interaction', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          emotion: currentEmotion,
-          product: product.title,
-          action: 'purchased',
-          category: product.category
-        })
-      }).catch(console.error);
     }
-  };
-
-  const handleEmotionChange = (emotion, confidence) => {
-    setCurrentEmotion(emotion);
-  };
-
-  const handleRecommendations = (recommendations) => {
-    setMoodRecommendations(recommendations);
   };
 
   const limited = product && product.description;
@@ -236,8 +214,8 @@ function ProductPage() {
         </div>
       </div>
       
-      {/* AI-Based Product Recommendations */}
-      <MoodBasedRecommendations />
+      {/* Related Product Recommendations */}
+      <Popular />
       
       <div className="lowerNav">
         <LowerNav />

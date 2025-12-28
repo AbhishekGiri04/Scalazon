@@ -1,6 +1,0 @@
-requirements.txt
-mood_detection_server.py
-start_moodmart.py
-*.py
-__pycache__/
-.env

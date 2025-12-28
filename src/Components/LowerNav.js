@@ -1,5 +1,5 @@
 import { React, useEffect, useState, useRef } from "react";
-// Using custom MoodMart branding
+// Using custom Scalazon branding
 import search from "../imgs/search.png";
 import wishlist from "../imgs/wishlist.png";
 import cart from "../imgs/cart.png";

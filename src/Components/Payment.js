@@ -47,7 +47,7 @@ function Payment() {
   const [cardDisplay, setcardDisplay] = useState("none");
   const [currentDateTime, setCurrentDateTime] = useState("");
 
-  document.title = "Payment section"
+  document.title = "Scalazon - Payment"
 
   const notify1 = () =>
     toast.error("Please fill-up the form correctly!", {

@@ -1,12 +1,39 @@
 {
-  "name": "moodmart",
+  "name": "scalazon",
   "version": "1.0.0",
-  "description": "MoodMart - Feel. Find. Shop. AI-powered mood detection with personalized shopping",
+  "description": "Scalazon - Your Shopping Destination. Modern e-commerce platform built with React, featuring best deals, quality products, and seamless shopping experience.",
+  "keywords": [
+    "scalazon",
+    "e-commerce",
+    "shopping",
+    "react",
+    "online-store",
+    "amazon-clone",
+    "electronics",
+    "fashion",
+    "jewelry"
+  ],
+  "author": {
+    "name": "Abhishek Giri",
+    "email": "abhishekgiri04@gmail.com",
+    "url": "https://github.com/abhishekgiri04"
+  },
+  "homepage": "https://scalazon.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishekgiri04/scalazon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhishekgiri04/scalazon/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "npm start",
+    "deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -23,9 +50,7 @@
     "react-toastify": "^9.1.3",
     "vanilla-tilt": "^1.8.1",
     "web-vitals": "^2.1.4",
-    "axios": "^1.5.0",
-    "@tensorflow/tfjs": "^4.10.0",
-    "face-api.js": "^0.22.2"
+    "axios": "^1.5.0"
   },
   "browserslist": {
     "production": [
@@ -38,5 +63,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }

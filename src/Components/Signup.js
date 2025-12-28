@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./signin.css";
-// Using custom MoodMart branding
+// Using custom Scalazon branding
 import BG1 from "../imgs/login-BG.png";
 import BG2 from "../imgs/login-BG2.png";
 import google from "../imgs/google.png";
@@ -27,7 +27,7 @@ function Signup() {
   const [PasswordError, setPasswordError] = useState("");
   const [NameError, setNameError] = useState("");
 
-  document.title = "MoodMart - Feel. Find. Shop."
+  document.title = "Scalazon - Your Shopping Destination"
 
   const notify1 = () =>
     toast.error("Please fill-up all the credentials properly!", {
@@ -164,11 +164,11 @@ function Signup() {
         <div className="login-navbar">
           <div className="main-logo">
             <img 
-              src="https://i.pinimg.com/1200x/fc/9d/ff/fc9dfff31121e22216be786dc7a2ee5f.jpg" 
+              src="https://t3.ftcdn.net/jpg/04/18/27/84/360_F_418278492_qD4wt38KiSik4tP0d8TyzQTObnDuC6nt.jpg" 
               className="moodmart-logo" 
-              alt="MoodMart Logo"
+              alt="Scalazon Logo"
             />
-            <span className="logo-text">MoodMart</span>
+            <span className="logo-text">Scalazon</span>
           </div>
           <div className="signup">
             <Link to="/">

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Error() {
   const navigate = useNavigate();
 
-  document.title = "404! Page not found"
+  document.title = "Scalazon - Page Not Found"
 
   return (
     <>

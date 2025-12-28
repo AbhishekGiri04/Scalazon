@@ -17,7 +17,7 @@ function Profile() {
   const [image, setImage] = useState("");
   const navigate = useNavigate();
 
-  document.title = "MoodMart - Your Profile"
+  document.title = "Scalazon - Your Profile"
 
   const checkDP = () => {
     if (user && user.photoURL) {

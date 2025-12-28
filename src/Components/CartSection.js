@@ -26,7 +26,7 @@ function CartSection() {
 
   const navigate = useNavigate();
 
-  document.title = "MoodMart - Shopping Cart"
+  document.title = "Scalazon - Shopping Cart"
 
   useEffect(() => {
     const newSubtotal = CartItems.reduce(
@@ -192,7 +192,7 @@ function CartSection() {
               <p>
                 Congrats! You're eligible for <b>Free Delivery</b>.
                 <p style={{ marginTop: "5px", marginBottom: "0px" }}>
-                  Use code <b>MOODMART20</b> for 20% discount.
+                  Use code <b>SCALAZON20</b> for 20% discount.
                 </p>
               </p>
             </div>
@@ -200,17 +200,17 @@ function CartSection() {
             <div className="promocode">
               <input
                 type="text"
-                placeholder="Enter MOODMART20 for discount"
+                placeholder="Enter SCALAZON20 for discount"
                 onChange={handlePromocode}
                 value={promocode}
               />
               <button
                 onClick={() => {
-                  if (promocode === "MOODMART20") {
+                  if (promocode === "SCALAZON20") {
                     TotalValue(totalPrice1);
                     setdiscountCode(promocode);
                     setCorrectCode(true);
-                  } else if (promocode !== "MOODMART20") {
+                  } else if (promocode !== "SCALAZON20") {
                     setdiscountCode(promocode);
                     TotalValue(totalPrice2);
                     setCorrectCode(false);
@@ -229,7 +229,7 @@ function CartSection() {
               }
               className="applied"
             >
-              <b>MOODMART20</b> has been applied!
+              <b>SCALAZON20</b> has been applied!
             </p>
             <p
               style={

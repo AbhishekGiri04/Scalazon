@@ -3,14 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="MoodMart - Feel. Find. Shop. AI-powered mood detection with personalized shopping" />
+    <meta name="theme-color" content="#ff9500" />
+    <meta name="description" content="Scalazon - Your Shopping Destination. Modern e-commerce platform with best deals, quality products, and seamless shopping experience. Browse electronics, fashion, jewelry and more." />
+    <meta name="keywords" content="scalazon, shopping, e-commerce, online store, electronics, fashion, jewelry, deals, amazon clone" />
+    <meta name="author" content="Abhishek Giri" />
+    <meta property="og:title" content="Scalazon - Your Shopping Destination" />
+    <meta property="og:description" content="Modern e-commerce platform with best deals and seamless shopping experience" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://scalazon.vercel.app" />
+    <meta property="og:image" content="https://mir-s3-cdn-cf.behance.net/project_modules/hd/ca226b34153161.56c5d4776abb7.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Scalazon - Your Shopping Destination" />
+    <meta name="twitter:description" content="Modern e-commerce platform with best deals and seamless shopping experience" />
+    <meta name="twitter:image" content="https://mir-s3-cdn-cf.behance.net/project_modules/hd/ca226b34153161.56c5d4776abb7.png" />
+    
     <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/hd/ca226b34153161.56c5d4776abb7.png" type="image/png" />
+    <link rel="apple-touch-icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/hd/ca226b34153161.56c5d4776abb7.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <title>MoodMart - Feel. Find. Shop.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Scalazon - Your Shopping Destination</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Scalazon",
+      "description": "Your Shopping Destination - Modern e-commerce platform",
+      "url": "https://scalazon.vercel.app",
+      "author": {
+        "@type": "Person",
+        "name": "Abhishek Giri",
+        "url": "https://github.com/abhishekgiri04"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://scalazon.vercel.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h2>🛒 Scalazon</h2>
+        <p>You need to enable JavaScript to run this app.</p>
+        <p>Please enable JavaScript in your browser settings and refresh the page.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
+    
+    <!-- Loading Animation -->
+    <style>
+      #root:empty::before {
+        content: '';
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        margin: -25px 0 0 -25px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #ff9500;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      
+      #root:empty::after {
+        content: 'Loading Scalazon...';
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #ff9500;
+        z-index: 9999;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </body>
 </html>

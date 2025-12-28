@@ -17,7 +17,7 @@ function Lists() {
   const ListItems = useSelector((state) => state.ItemsAdded.ListItems);
   const dispatch = useDispatch();
 
-  document.title = "MoodMart - Your Wishlist"
+  document.title = "Scalazon - Your Wishlist"
 
   useEffect(() => {
     // Update the added ids whenever the list items change
