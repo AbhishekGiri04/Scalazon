@@ -123,8 +123,8 @@ Scalazon is a modern e-commerce platform that provides users with a seamless onl
 ### Authentication & Dashboard
 <table>
   <tr>
-    <td><img src="docs/SignIn_Page.png" alt="Sign In" width="400"/><br/><b>Sign In Page</b></td>
-    <td><img src="docs/SignUp_Page.png" alt="Sign Up" width="400"/><br/><b>Sign Up Page</b></td>
+    <td><img src="docs/SignIn.png" alt="Sign In" width="400"/><br/><b>Sign In Page</b></td>
+    <td><img src="docs/SignUp.png" alt="Sign Up" width="400"/><br/><b>Sign Up Page</b></td>
   </tr>
   <tr>
     <td><img src="docs/Home_Page.png" alt="Home" width="400"/><br/><b>Home Page</b></td>
@@ -151,8 +151,6 @@ Scalazon is a modern e-commerce platform that provides users with a seamless onl
     <td><img src="docs/Transactions.png" alt="Transactions" width="400"/><br/><b>Transactions</b></td>
   </tr>
 </table>
-
-<br>
 
 ## 📁 Project Structure
 
@@ -451,37 +449,5 @@ vercel --prod
 ---
 
 <div align="center">
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<br>
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-<br>
-
----
-
-## 🙏 Acknowledgments
-
-- Design inspiration from Amazon
-- Icons from Font Awesome
-- Product data from FakeStore API
-- Firebase for backend services
-- React community for amazing tools
-
-**© 2025 Scalazon. All Rights Reserved.**
-
-⭐ Star this repo if you find it useful!
 
 </div>
