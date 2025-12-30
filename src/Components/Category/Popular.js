@@ -70,16 +70,30 @@ function Popular() {
         </div>
       </div>
       {showDeals ? (
-        <Deals />
+        <>
+          <Deals />
+        </>
       ) : activeIndex === 2 ? (
-        <Men />
+        <>
+          <Men />
+        </>
       ) : activeIndex === 3 ? (
-        <Women />
+        <>
+          <Women />
+        </>
       ) : activeIndex === 1 ? (
-        <Jewelery />
+        <>
+          <Jewelery />
+        </>
       ) : activeIndex === 0 ? (
-        <Electronics />
-      ) : <Deals/>}
+        <>
+          <Electronics />
+        </>
+      ) : (
+        <>
+          <Deals/>
+        </>
+      )}
     </>
   );
 }

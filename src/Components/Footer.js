@@ -35,12 +35,7 @@ function Footer() {
         maxWidth: '1200px',
         margin: '0 auto'
       }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: '40px',
-          marginBottom: '40px'
-        }}>
+        <div className="footer-grid">
           
           <div>
             <h4 style={{ color: '#ff9500', marginBottom: '20px', fontSize: '18px' }}>
