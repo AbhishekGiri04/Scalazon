@@ -5,7 +5,6 @@ import Men from "./Men";
 import Women from "./Women";
 import Electronics from "./Electronics";
 import Jewelery from "./Jewelery";
-import Footer from "../Footer";
 
 import men from "./Img/men.png";
 import women from "./Img/women.png";
@@ -71,36 +70,16 @@ function Popular() {
         </div>
       </div>
       {showDeals ? (
-        <>
-          <Deals />
-          <Footer />
-        </>
+        <Deals />
       ) : activeIndex === 2 ? (
-        <>
-          <Men />
-          <Footer />
-        </>
+        <Men />
       ) : activeIndex === 3 ? (
-        <>
-          <Women />
-          <Footer />
-        </>
+        <Women />
       ) : activeIndex === 1 ? (
-        <>
-          <Jewelery />
-          <Footer />
-        </>
+        <Jewelery />
       ) : activeIndex === 0 ? (
-        <>
-          <Electronics />
-          <Footer />
-        </>
-      ) : (
-        <>
-          <Deals/>
-          <Footer />
-        </>
-      )}
+        <Electronics />
+      ) : <Deals/>}
     </>
   );
 }
