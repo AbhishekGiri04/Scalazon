@@ -4,7 +4,6 @@ import "./modern-layout.css";
 import Delivery from "../imgs/delivery.png";
 import Popular from "./Category/Popular";
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 function Home({ user, onLogout }) {
   document.title = "Scalazon - Your Shopping Destination"
@@ -77,7 +76,6 @@ function Home({ user, onLogout }) {
             <Popular />
           </div>
         </div>
-        <Footer />
     </>
   );
 }
