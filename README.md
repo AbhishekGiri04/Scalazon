@@ -157,8 +157,8 @@ Scalazon is a modern e-commerce platform that provides users with a seamless onl
 ```
 Scalazon/
 ├── 📂 docs/                       # 📸 Screenshots and documentation
-│   ├── 📄 SignIn_Page.png               # 🔑 Sign in page screenshot
-│   ├── 📄 SignUp_Page.png               # 📝 Sign up page screenshot
+│   ├── 📄 SignIn.png                    # 🔑 Sign in page screenshot
+│   ├── 📄 SignUp.png                    # 📝 Sign up page screenshot
 │   ├── 📄 Home_Page.png                 # 🏠 Home page screenshot
 │   ├── 📄 Dashboard_Page.png            # 📊 Dashboard screenshot
 │   ├── 📄 Cart.png                      # 🛒 Shopping cart screenshot
@@ -170,7 +170,27 @@ Scalazon/
 ├── 📂 public/                     # 🌐 Static assets and HTML template
 │   └── 📄 index.html                   # Main HTML template with SEO
 ├── 📂 src/                        # 🎨 React application source
+│   ├── 📂 action/                 # 🔄 Redux actions
+│   │   ├── 📄 Cart.js                   # 🛒 Cart actions
+│   │   ├── 📄 List.js                   # ❤️ Wishlist actions
+│   │   └── 📄 Orders.js                 # 📦 Order actions
 │   ├── 📂 Components/             # 🧩 Reusable UI components
+│   │   ├── 📂 Category/               # 📂 Product category components
+│   │   │   ├── 📂 Img/                    # 🖼️ Category images and icons
+│   │   │   │   ├── 📄 heart.png               # ❤️ Wishlist icons
+│   │   │   │   ├── 📄 red-heart.png           # ❤️ Active wishlist icons
+│   │   │   │   ├── 📄 rating.png              # ⭐ Rating stars
+│   │   │   │   ├── 📄 men.png                 # 👔 Men's category icon
+│   │   │   │   ├── 📄 women.png               # 👗 Women's category icon
+│   │   │   │   ├── 📄 jwelery.png             # 💎 Jewelry category icon
+│   │   │   │   ├── 📄 pc.png                  # 💻 Electronics category icon
+│   │   │   │   └── 📄 ...                     # Other category assets
+│   │   │   ├── 📄 Electronics.js            # 💻 Electronics category
+│   │   │   ├── 📄 Men.js                    # 👔 Men's fashion
+│   │   │   ├── 📄 Women.js                  # 👗 Women's fashion
+│   │   │   ├── 📄 Jewelery.js               # 💎 Jewelry category
+│   │   │   ├── 📄 Popular.js                # 🌟 Popular categories
+│   │   │   └── 📄 popular.css               # 🎨 Category styles
 │   │   ├── 📄 Home.js                   # 🏠 Main landing page
 │   │   ├── 📄 Navbar.js                 # 🔝 Navigation header
 │   │   ├── 📄 Footer.js                 # 🔻 Footer component
@@ -186,25 +206,19 @@ Scalazon/
 │   │   ├── 📄 Error.js                  # ⚠️ Error handling component
 │   │   ├── 📄 LowerNav.js               # 📱 Mobile navigation
 │   │   ├── 📄 Spinner.js                # ⏳ Loading spinner
-│   │   └── 📂 Category/                 # 📂 Product category components
-│   │       ├── 📄 Electronics.js            # 💻 Electronics category
-│   │       ├── 📄 Mens.js                   # 👔 Men's fashion
-│   │       ├── 📄 Womens.js                 # 👗 Women's fashion
-│   │       └── 📄 Jewelry.js                # 💎 Jewelry category
-│   ├── 📂 action/                 # 🔄 Redux actions
-│   │   ├── 📄 Cart.js                   # 🛒 Cart actions
-│   │   ├── 📄 List.js                   # ❤️ Wishlist actions
-│   │   └── 📄 Orders.js                 # 📦 Order actions
+│   │   └── 📄 *.css                     # 🎨 Component stylesheets
 │   ├── 📂 reducer/                # 📊 Redux reducers
 │   │   ├── 📄 CartReducer.js            # 🛒 Cart state management
 │   │   ├── 📄 ListReducer.js            # ❤️ Wishlist state management
 │   │   ├── 📄 OrderReducer.js           # 📦 Order state management
 │   │   └── 📄 reducer.js                # Combined reducers
-│   ├── 📂 imgs/                   # 🖼️ Component images and assets
+│   ├── 📂 imgs/                   # 🖼️ Application images and assets
 │   │   ├── 📄 cart.png                  # 🛒 Cart icons
 │   │   ├── 📄 heart.png                 # ❤️ Wishlist icons
 │   │   ├── 📄 user.png                  # 👤 User avatars
 │   │   ├── 📄 loading.gif               # ⏳ Loading animations
+│   │   ├── 📄 delivery.png              # 🚚 Delivery graphics
+│   │   ├── 📄 login-BG.png              # 🔐 Login backgrounds
 │   │   └── 📄 ...                       # Other UI assets
 │   ├── 📂 font/                   # 🔤 Custom fonts
 │   │   └── 📄 CREDC___.ttf              # Custom font file
@@ -217,6 +231,7 @@ Scalazon/
 ├── 📄 .env                        # 🔐 Environment variables
 ├── 📄 .env.example                # 🔧 Environment template
 ├── 📄 .gitignore                  # 🚫 Git ignore patterns
+├── 📄 LICENSE                     # 📜 MIT License
 ├── 📄 vercel.json                 # 🚀 Vercel deployment config
 └── 📄 README.md                   # 📖 Project documentation
 ```
@@ -422,7 +437,7 @@ vercel --prod
 ## 📞 Help & Contact  
 
 > 💬 *Got questions or need assistance with Scalazon?*  
-> We're here to help with technical support and collaboration!
+> We're here to help with integration and customization!
 
 <div align="center">
 
@@ -438,6 +453,12 @@ vercel --prod
 </a>
 
 <br/>
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
